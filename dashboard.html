@@ -105,39 +105,67 @@
         a {
           text-decoration: none;
         }
+
+        @media screen and (max-width: 600px) {
+          .profile-pic {
+            width: 70px;
+            height: 70px;
+            box-shadow: 0px 0px 13px rgba(104, 100, 100, 0.3);
+            background: url(pictures/potrait1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            z-index: 6;
+            transform: translate(0px, 0px);
+            display: none;
+          }
+
+          .welcome-panel {
+            margin: 0;
+            margin-top: 40px;
+          }
+
+          .welcome-panel h1 {
+            font-size: 24px;
+          }
+        }
       </style>
     </head>
     <body>
+      <div class="phone-navbar">
+        <div
+          class="logo-image"
+          style="background-image: url(pictures/logo.png)"
+        ></div>
+        <div class="side-navbar"><i class="fa fa-bars"></i></div>
+      </div>
       <section class="container-fluid dashboard">
         <div class="row dash-cover">
           <div class="col-md-2 dash-navbar">
             <div class="top-content">
               <div class="logo"></div>
-              <a href="#"
-                ><div class="home"><i class="bi-house"></i> Dashboard</div></a
+              <a href="dashboard.html"
+                ><div class="home" id="active">
+                  <i class="bi-house"></i> Dashboard
+                </div></a
               >
-              <a href="#"
+              <a href="loandashboard.html"
                 ><div class="home"><i class="bi-cash-coin"></i> Loans</div></a
               >
-              <a href="#"
+              <a href="transferfunds.html"
                 ><div class="home">
                   <i class="bi-reply-fill"></i> Transfer Funds
                 </div></a
               >
-              <a href="#"
-                ><div class="home">
-                  <i class="bi-credit-card"></i>Bill Pay
-                </div></a
-              >
-              <a href="#"
+
+              <a href="security.html"
                 ><div class="home"><i class="bi-lock"></i>Security</div></a
               >
               <div class="profile">
-                <h2>Account</h2>
-                <a href="#"
+                <a href="profilepage.html"
                   ><div class="home"><i class="bi-person"></i>Profile</div></a
                 >
-                <a href="#"
+                <a href="transactionlog.html"
                   ><div class="home">
                     <i class="bi-list-task"></i>Transaction Log
                   </div></a
@@ -175,7 +203,7 @@
                 </div>
                 <div class="transaction">
                   <div class="tran-head">
-                    <p>Transactions</p>
+                    <p>Recent Transactions</p>
                     <span>See all</span>
                   </div>
                   <div class="tran-body">
@@ -242,7 +270,7 @@
                   <h3 id="h2">My Cards</h3>
                   <div class="card-cover">
                     <div class="card1">
-                      <div class="card-status">SUSPENDED</div>
+                      <div class="card-status">ACTIVE</div>
                       <div class="card-logo">VIRTUAL <span>CARD</span></div>
                       <div class="card-number">
                         1742 5489 9923 7472 <br /><span>CARD NUMBER</span>

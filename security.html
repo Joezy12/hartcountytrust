@@ -1,0 +1,353 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>County Trust Bank | dashboard</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+      />
+
+      <link rel="stylesheet" href="mycss/dashstyle.css" />
+      <link rel="stylesheet" href="mycss/style.css" />
+      <link rel="stylesheet" href="mycss/contactstyle.css" />
+      <link rel="stylesheet" href="mycss/securitystyle.css" />
+
+      <link
+        href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+        rel="stylesheet"
+      />
+
+      <style>
+        html {
+          overflow-x: hidden;
+        }
+
+        * {
+          font-family: "Roboto", sans-serif;
+        }
+
+        .logo {
+          width: 150px;
+          height: 50px;
+          background: url(pictures/logo.png);
+          background-size: cover;
+          margin-bottom: 20px;
+        }
+
+        .profile-image {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: url(pictures/potrait1.jpg);
+          background-size: cover;
+        }
+
+        body {
+          background: #eee;
+        }
+
+        .welcome-panel {
+          width: 100%;
+          height: 170px;
+
+          border-radius: 12px;
+          background: url(pictures/bankbackground.jpg);
+          background-size: cover;
+          margin-top: -100px;
+          color: white;
+          padding: 5px 14px;
+        }
+
+        .profile-pic {
+          width: 170px;
+          height: 170px;
+
+          background: url(pictures/profilepic.png);
+          background-size: 150px;
+          background-position: center;
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          z-index: 6;
+        }
+
+        .card1 {
+          width: 100%;
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(pictures/bankcard3.jpg);
+          background-size: cover;
+          border-radius: 6px;
+          padding: 10px 14px;
+        }
+
+        .card2 {
+          width: 100%;
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url(pictures/bankcard3.jpg);
+          background-size: cover;
+          border-radius: 6px;
+          padding: 10px 0px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        #recent {
+          width: 250px;
+          background: url(pictures/driverslicense.jfif);
+          background-size: cover;
+          height: 160px;
+        }
+      </style>
+    </head>
+    <body>
+      <section class="container-fluid dashboard">
+        <div class="row dash-cover">
+          <div class="col-md-2 dash-navbar">
+            <div class="top-content">
+              <div class="logo"></div>
+              <a href="dashboard.html"
+                ><div class="home"><i class="bi-house"></i> Dashboard</div></a
+              >
+              <a href="loandashboard.html"
+                ><div class="home"><i class="bi-cash-coin"></i> Loans</div></a
+              >
+              <a href="transferfunds.html"
+                ><div class="home">
+                  <i class="bi-reply-fill"></i> Transfer Funds
+                </div></a
+              >
+
+              <a href="security.html"
+                ><div class="home" id="active">
+                  <i class="bi-lock"></i>Security
+                </div></a
+              >
+              <div class="profile">
+                <a href="profilepage.html"
+                  ><div class="home"><i class="bi-person"></i>Profile</div></a
+                >
+                <a href="transactionlog.html"
+                  ><div class="home">
+                    <i class="bi-list-task"></i>Transaction Log
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="bottom-content">
+              <a href="#"
+                ><div class="home">
+                  <i class="bi-box-arrow-in-left"></i> Log out
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="col-md-10 dash-content">
+            <div class="security-head">Security Settings</div>
+            <div class="row main-security">
+              <div class="col-md-8 security-left">
+                <div class="factor-authentication">
+                  <div class="the-factor">
+                    <div class="factor-left">
+                      <h4>Two-factor Authentication</h4>
+                      <p>
+                        Enable two-factor Authentication to add an extra layer
+                        of security to your account incase your password gets
+                        stolen
+                      </p>
+                    </div>
+                    <div class="factor-right">
+                      <button id="enable">Enable</button>
+                    </div>
+                  </div>
+                  <div class="the-factor factor-top topper">
+                    <div class="factor-left">
+                      <h5>Another e-mail</h5>
+                      <p>E-mail to send verification link</p>
+                    </div>
+                    <div class="factor-right">
+                      <button id="setup">Setup</button>
+                    </div>
+                  </div>
+                  <div class="the-factor factor-top">
+                    <div class="factor-left">
+                      <h5>SMS Recovery</h5>
+                      <p>Add a sms number to get verification codes</p>
+                    </div>
+                    <div class="factor-right">
+                      <button id="setup">Setup</button>
+                    </div>
+                  </div>
+                  <div class="the-factor factor-top">
+                    <div class="factor-left">
+                      <h5>Get OTP</h5>
+                      <p>
+                        Get an instant OTP code for international transaction
+                      </p>
+                    </div>
+                    <div class="factor-right">
+                      <button id="setup">Setup</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row change-password">
+                  <div class="col-md-7 password-left">
+                    <h4>Password</h4>
+                    <p>
+                      Enable two-factor Authentication to add an extra layer of
+                      security to your account incase your password gets stolen
+                    </p>
+                    <div class="new-password">
+                      <label for="old-password">Current password</label><br />
+                      <input type="text" placeholder="Current password" /><br />
+                      <label for="old-password">New password</label><br />
+                      <input type="text" placeholder="New password" /><br />
+                      <label for="old-password">Confirm password</label><br />
+                      <input type="text" placeholder="Confirm passwords" />
+                    </div>
+                  </div>
+                  <div class="col-md-5 password-right">
+                    <div class="password-rules">
+                      <h5>Rules for passwords</h5>
+                      <p>
+                        To create a new password, you have to meet all of the
+                        following requirements:
+                      </p>
+                      <ul>
+                        <li>Minimum 8 character</li>
+                        <li>At least one special character</li>
+                        <li>At least one number</li>
+                        <li>Can't be the same as previous</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 security-right">
+                <div class="confirm-email"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+      <script>
+        var slideIndex = 0;
+        var slides = document.getElementsByClassName("slide");
+
+        function showSlide(index) {
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[index].style.display = "block";
+        }
+
+        function navigateSlide(n) {
+          slideIndex += n;
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          } else if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
+          showSlide(slideIndex);
+        }
+
+        showSlide(slideIndex);
+
+        setInterval(function () {
+          navigateSlide(1);
+        }, 5000);
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Add smooth scrolling to all links
+          $("a").on("click", function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $("html, body").animate(
+                {
+                  scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                }
+              );
+            } // End if
+          });
+        });
+      </script>
+
+      <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE>
