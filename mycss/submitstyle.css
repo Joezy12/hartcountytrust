@@ -27,6 +27,12 @@
 @media screen and (max-width: 890px) {
   .success h1 {
     font-size: 30px;
+    background: rgb(12, 39, 70);
+  }
+
+  .success .success2 {
+    background: rgb(12, 39, 70);
+    padding: 10px 10px;
   }
 
   .success h1 br {
@@ -36,5 +42,10 @@
   .success {
     padding-left: 20px;
     padding-right: 20px;
+    background: rgb(12, 39, 70);
+  }
+
+  .dash-content2 {
+    padding: 0;
   }
 }
